@@ -27,7 +27,7 @@ describe('Fiscal', function () {
   describe('getCalendarYearForPeriod', function () {
     it('should return the calendar year for the period and fiscal year arguments when useForwardCalendar is true',
     function () {
-      var fiscal1 = new Fiscal(1,2016);
+      var fiscal1 = new Fiscal(1, 2016);
       assert.equal(fiscal1.getCalendarYearForPeriod(7, 2016), 2016);
       var fiscal7 = new Fiscal(7, 2017);
       assert.equal(fiscal7.getCalendarYearForPeriod(1, 2017), 2016);
@@ -37,7 +37,7 @@ describe('Fiscal', function () {
     });
     it('should return the calendar year for the period and fiscal year arguments when useForwardCalendar is false',
     function () {
-      var fiscal1 = new Fiscal(-1,2016);
+      var fiscal1 = new Fiscal(-1, 2016);
       assert.equal(fiscal1.getCalendarYearForPeriod(7, 2016), 2016);
       var fiscal7 = new Fiscal(-7, 2017);
       assert.equal(fiscal7.getCalendarYearForPeriod(1, 2016), 2016);
@@ -67,7 +67,7 @@ describe('Fiscal', function () {
       assert.equal(fiscal.getYear('2016-01-01'), 2016);
       assert.equal(fiscal.getYear('2015-07-01'), 2016);
     });
-     it('should return the correct fiscal year for the date argument when useForwardYear is false', 
+    it('should return the correct fiscal year for the date argument when useForwardYear is false', 
     function () {
       var fiscal = new Fiscal(-7, 2017);
       assert.equal(fiscal.getYear('2016-07-01'), 2016);
