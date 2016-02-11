@@ -1,7 +1,7 @@
 {
   "name": "fiscal-dates",
   "version": "0.1.0",
-  "description": "Utilities for working with Blob objects in the browser",
+  "description": "Manage fiscal dates in the browser or server.",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
